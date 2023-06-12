@@ -1,0 +1,27 @@
+
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG
+        type:
+          descriptor:
+            sql:
+              BasicBinder: 'TRACE '
+spring:
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    password: Natalia1211
+    url: jdbc:mysql://database-1.cnf1yvrfhkeb.us-east-2.rds.amazonaws.com:3306/DBPruebas
+    username: admin
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+  application:
+    name: servicio-conjuntos2
+    
+server: 
+  port: 9090
+# Config de el servidor  
